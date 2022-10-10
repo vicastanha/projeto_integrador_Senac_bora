@@ -1,0 +1,331 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #eef4ed;
+}
+
+/*cabeçalho*/
+header {
+    width: 100%;
+    height: 44px;
+    padding: 10px 0;
+    background: #4B543B;
+}
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    width: 46px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+header h6 {
+    font-size: 24px;
+    color: #FFF;
+    font-weight: 500;
+    line-height: 30px;
+}
+h6:hover{
+    color: #4B543B;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 16px;
+    margin-right: 20px;
+}
+
+header ul li {
+    font-weight: 500;
+    line-height: 30px;
+}
+
+header li a {
+    text-decoration: none;
+    color: #FFF;
+    padding-bottom: 16px;
+}
+
+header li a:hover {
+    color: #B57F50;
+}
+
+header li a.active {
+    font-weight: 700;
+    border-bottom: 2px solid #E4572E;
+    color: #E4572E;
+}
+/*fim cabeçalho*/
+
+/*tela index*/
+#servicos {
+    max-width: 1250px;
+    margin: 0 auto; 
+}
+section:first-child{
+    margin: 0;
+    padding: 0;
+}
+.banner-background{
+    background-image: url('../img/banner3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width:100%;
+    height:750px;
+    background-position:100%;
+    
+}
+/*CARDS*/
+#servicos .servicos-content h2{
+    margin-top: 20px;
+    font-size: 65px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#servicos .servicos-card-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+#servicos .servicos-card{
+    display: flex;
+    flex-direction:column;
+    height: 300px;
+    width: 220px;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+#servicos .servicos-card:hover{
+    box-shadow: rgb(181, 127, 80) 0px 0px 0px 3px;
+}
+#servicos img{
+    max-width: 220px;
+    border-radius: 7px 7px 0 0;
+    
+}
+#servicos .servico-info{
+    padding: 10px;
+}
+#servicos h3{
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+    color: #0B2545;
+}
+#servicos h4{
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+    color: #0B2545;
+}
+#servicos .servico-info p{
+    font-weight: 300;
+    font-style: italic;
+    margin-top:10px;
+}
+
+#servicos .servico-preco-btn{
+    max-width: 60px;
+    max-height: 40px;
+    padding: 10px;
+    background: #B57F50;
+    color:#FFF;
+
+}
+#agendamento .agendamento-content button {
+    display: block;
+    position: relative;
+    margin: 0.5em 0;
+    padding: .8em 2.2em;
+    cursor: pointer;
+    background: rgb(181, 127, 80);
+    border: none;
+    border-radius: .4em;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    /* font-family: "Work Sans", sans-serif; */
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    mix-blend-mode: color-dodge;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    box-shadow: rgb(181, 127, 80)  0px 1px 3px 1px;
+    margin-top: 36px;
+}
+#agendamento .agendamento-content a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*fim tela index*/
+
+/*TELA DE AGENDAMENTOS*/
+.display-arrumado{
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside{
+    background-color:rgba(160, 160, 160, 0.4) ;
+    width: 425px;
+    white-space: normal;
+    height: 600px;
+    line-height: 100%;
+}
+.container-ag {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#agendamentos{
+    max-width: 1000px;
+    margin: 0 auto;
+}  
+#agendamentos .atendentes h2 {
+    padding-left: 15px;
+}
+#agendamentos .agendamentos-content .atendentes-lista {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    margin-left: 20px;
+}
+#agendamentos .atendentes-lista .atendente-card {
+    width: 80px;
+    height: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  }
+  
+  #agendamentos .atendente-card img {
+    border-radius: 50px;
+  }
+  
+  #agendamentos .atendente-card p {
+    font-weight: 500;
+    line-height: 60px;
+  }
+  
+  #agendamentos .atendente-card:hover {
+    box-shadow: rgb(182, 127, 80) 0px 0px 0px 2px,
+      rgba(182, 127, 80, 0.4) 0px 0px 0px 6px;
+  }
+
+/*inicio tabela*/
+
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border:3px solid #B57F50;
+}
+thead th:nth-child(1) {
+    width: 30%;
+
+
+}
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 35%;
+} 
+#dia .dia-tabela tr:first-child{
+   align-items: center;
+   height: 50px;
+   gap: 16px;
+   text-align: center;
+   
+}
+#dia .dia-tabela tr{
+    align-items: center;
+   height: 30px;
+   gap: 16px;
+   text-align: center;
+   font-size: 16px;
+}
+/*fim Tabela*/
+/*Fim tela de agendamentos*/
+
+
+
+footer {
+    background-color: #4B543B;
+    color: #FFF;
+    margin-top: 52px;
+    padding: 32px 0;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    
+
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer-icons img {
+    max-width: 32px;
+}
+
+footer .footer-info {
+    justify-items: center;
+}
+
+footer .footer-info ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 400;
+    list-style-type: style type disc;
+    gap: 25px;
+    justify-content: center;
+    padding: 25px;
+}
+
+footer li:first-child {
+    list-style-type: none;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-weight: 300;
+    font-size: 10px;
+}
+
