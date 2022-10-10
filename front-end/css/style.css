@@ -164,7 +164,7 @@ header li a.active {
     margin: 0.5em 0;
     padding: .8em 2.2em;
     cursor: pointer;
-    background: rgb(181, 127, 80);
+    background-color: rgb(181, 127, 80);
     border: none;
     border-radius: .4em;
     text-transform: uppercase;
