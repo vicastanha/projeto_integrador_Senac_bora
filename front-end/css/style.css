@@ -1,11 +1,11 @@
 * {
     padding:0;
     margin:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 body{
-    background-color: #eef4ed;
+    background-color: #fff;
 }
 
 /*cabeçalho*/
@@ -13,7 +13,7 @@ header {
     width: 100%;
     height: 44px;
     padding: 10px 0;
-    background: #4B543B;
+    background-color: #004A8D;
 }
 header .container {
     display: flex;
@@ -22,7 +22,7 @@ header .container {
     align-items: center;
 }
 header .logo{
-    width: 46px;
+    width: 65px;
     margin-left: 50px;
     display: flex;
     flex-direction: row;
@@ -36,7 +36,7 @@ header h6 {
     line-height: 30px;
 }
 h6:hover{
-    color: #4B543B;
+    color: #F7941D;
 }
 
 header ul {
@@ -59,19 +59,21 @@ header li a {
 }
 
 header li a:hover {
-    color: #B57F50;
+    color: #F7941D;
 }
 
 header li a.active {
     font-weight: 700;
-    border-bottom: 2px solid #E4572E;
-    color: #E4572E;
+    border-bottom:2px solid #F7941D;
+    width:20px;
+    bottom: 5px;
+    color: #F7941D;
 }
 /*fim cabeçalho*/
 
 /*tela index*/
 #servicos {
-    max-width: 1250px;
+    max-width: 1400px;
     margin: 0 auto; 
 }
 
@@ -95,7 +97,8 @@ header li a.active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 20px;
+    justify-content: center;
 
 }
 #servicos .servicos-card{
@@ -146,7 +149,7 @@ header li a.active {
 #servicos .servico-preco-btn button{
     padding: 10px;
     border-radius: 5px;
-    background-color: #B57F50;
+    background-color: #F7941D;
     color:#FFF;
     max-width: 100px;
     max-height: 40px;
@@ -158,28 +161,52 @@ header li a.active {
     color: #FFF;
 }
 
+
+#agendamento .imagem-agendamentos{
+display: flex;
+justify-content: center;
+position: relative;
+}
+
+#agendamento .imagem-agendamentos img{
+    margin-top: 20px;
+    object-fit:contain;
+    max-width:1220px;
+    border-radius: 20px;
+}
+
+#agendamento .agendamento-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 365px;
+}
+
+#agendamento .agendamento-content h2{
+    position: absolute;
+    margin-top:-750px;
+    text-align: right;
+    color: #FFF;
+    font-size: 50px;
+
+}
+
 #agendamento .agendamento-content button {
-    display: block;
-    position: relative;
-    margin: 0.5em 0;
-    padding: .8em 2.2em;
-    cursor: pointer;
-    background-color: rgb(181, 127, 80);
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 12px;
     border: none;
-    border-radius: .4em;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    mix-blend-mode: color-dodge;
-    perspective: 500px;
-    transform-style: preserve-3d;
-    box-shadow: rgb(181, 127, 80)  0px 1px 3px 1px;
-    margin-top: 36px;
+    background-color: #004A8D;
+    border-radius: 5px;
+    position: absolute;
+    margin-top:-250px;
 }
 #agendamento .agendamento-content a {
     text-decoration: none;
     color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 /*fim tela index*/
 
@@ -236,8 +263,7 @@ aside{
   }
   
   #agendamentos .atendente-card:hover {
-    box-shadow: rgb(182, 127, 80) 0px 0px 0px 2px,
-      rgba(182, 127, 80, 0.4) 0px 0px 0px 6px;
+     box-shadow:  rgba (182, 127, 80, 0.4) 0px 0px 0px 6px;
   }
 
 /*inicio tabela*/
@@ -285,9 +311,71 @@ thead th:nth-child(4) {
 /*Fim tela de agendamentos*/
 
 
+/* Inicio sobre nos */
+#titulo {
+    margin-left: 48px;
+    margin-top: 40px;
+
+}
+#titulo h2{
+    font-size: 30px;
+}
+#sobre_nos {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#sobre_nos .sobre_nos-card-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sobre_nos .sobre_nos-card-content .sobre_nos-card {
+border: #0B2545;
+border-radius: 12px;
+box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+width: 300px;
+height: 350px;
+margin-top: 100px;
+padding: 20px;
+}
+
+#sobre_nos img {
+    max-width: 300px;
+    max-height: 350px;
+    justify-content: center;
+}    
+
+#sobre_nos .sobre_nos-info {
+    text-align: center;
+}
+
+#sobre_nos .sobre_nos-info h3 {
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+#sobre_nos .sobre_nos-info p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#texto_final {
+    margin-left: 48px;
+}
+
+#texto_final h2{
+    font-size: 30px;
+    margin-top: 65px;
+}
+
+/* Fim sobre nos */
+
+
+
 
 footer {
-    background-color: #4B543B;
+    background-color: #004A8D;
     color: #FFF;
     margin-top: 52px;
     padding: 32px 0;
