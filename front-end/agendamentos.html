@@ -10,35 +10,44 @@
 </head>
 <body>
   <header>
-    <div class="container">
-        <img src="./img/icon-logo.svg" alt="" class="logo">
-        <nav class="menu-content">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./agendamentos.html" class="active">Agendamentos</a></li>
-                <li><a href="./sobrenos.html">Sobre nós</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<div class="display-arrumando">
-<aside>
-  <div class="container">
-    <section id="tela-espera">
-      <div class="content">
-        <p>Esperando a seleção de um atendente...
-        </p>
-        
-      </div>
-    </section>
-  </div>
-</aside>
+        <div class="container">
+            <img src="./img/icon-logo.svg" alt="" class="logo">
+            <nav class="menu-content">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#"  class="active">Agendamentos</a></li>
+                    <li><a href="./sobrenos.html">Sobre nós</a></li>
+                    <li><button><a href="#">Cadastre-se</a></button></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
 
 <main>
-  <div class="container-ag">
-    <section id="agendamentos">
-      <div class="agendamentos-content">
-        <h2> Selecione um atendente:</h2>
+<section id="agendamentos">
+<div class="agendamento-content">
+  <div class="esquerda">
+  <div class="agendamento-card">
+    <div class="card-agendado">
+      <h3>Nome contanto</h3>
+      <h4>Serviço que será feito<h4>
+      <span class="divisao"> </span>
+        <div class="card-horario">
+          <p>Segunda 18 de Março ás 12:45</p>
+          <ul>
+            <li><span class=icone-tempo></span> 60 min</li>
+          </ul>
+          <div class="icone-img">
+            <span class="icone-profissional"></span>
+          </div>
+        </div>  
+    </div>
+  </div>
+
+  <div class="direita">
+  <div class="agendamento-users">
+    <h2> Selecione um atendente:</h2>
         <div class="atendentes-lista">
           <div class="atendente-card">
             <img src="" alt="">
@@ -61,79 +70,70 @@
             <p>João</p>
           </div>
         </div>
+  </div>
+  <div class="agendamento-tabela">
+    <h2>Selecione uma data: </h2>
+    <div class="escolha-dia">
+     <span class="seta-esquerda"></span>
+      <tr class="cabecalho-escolhe_dia">
+        <th>Segunda</th>
+        <td>01</td>
+        <th>Terça</th>
+          <td>02</td>
+        <th>Quarta</th>
+          <td>03</td> 
+        <th>Quinta</th>
+          <td>04</td>
+        <th>Sexta</th>
+        <td>05</td>
+      </tr>
+      <span class="seta-direita"></span>
+    </div>
+    <div class="tabela">
+    <table>
+            <tr class="cabecalho">
+              <th>Horário</th>
+              <th>Serviço</th>
+              <th>Cliente</th>
+              <th>Detalhes</th>
+              <th>Controles</th>
+            </tr>
+            <tr>
+              <td>08:00</td>
+              <td>Corte Masculino</td>
+              <td>Mario</td>
+              <td>Lorem ipsum dolor.</td>
+              <td><div class="controles">
+                <span class="editar"><a href="#"></a></span>
+                <span class="mais-opcoes"><a href="#"></a></span>
+              </div></td>
+            </tr>
+            <tr>
+              <td>10:00</td>
+              <td>Design de sobrancelha</td>
+              <td>Luiz</td>
+              <td>Lorem ipsum dolor.</td>
+              <td><div class="controles">
+                <span class="editar"><a href="#"></a></span>
+                <span class="mais-opcoes"><a href="#"></a></span>
+              </div></td>
+            </tr>
+            <tr>
+              <td>11:30</td>
+              <td>Corte e tingimento de cabelo</td>
+              <td>Alvaro</td>
+              <td>Lorem ipsum dolor.</td>
+              <td><div class="controles">
+                <span class="editar"><a href="#"></a></span>
+                <span class="mais-opcoes"><a href="#"></a></span>
+              </div></td>
+      </tr>
+          </table>
       </div>
-
-      <section id="dia">
-        <div class="dia-content">
-          <h2>Selecione uma data: </h2>
-          <div class="dia-tabela">
-            <table>
-              <tr class="cabecalho">
-                <th>&ensp;Horário&ensp;&ensp;</th>
-                <th>&ensp;Serviço&ensp;</th>
-                <th>&ensp;Cliente&ensp;</th>
-                <th>&ensp;Detalhes&ensp;</th>
-                <th>&ensp;Controles&ensp;</th>
-              </tr>
-              <tr>
-                <td>&ensp;08:00&ensp;&ensp;</td>
-                <td>&ensp;Corte Masculino&ensp;</td>
-                <td>&ensp;Mario&ensp;</td>
-                <td>&ensp;Lorem ipsum dolor.&ensp;</td>
-                <td><div class="controles">
-                  <span class="editar"><a href="#"></a></span>
-                  <span class="mais-opcoes"><a href="#"></a></span>
-                </div></td>
-              </tr>
-              <tr>
-                <td>&ensp;10:00&ensp;&ensp;</td>
-                <td>&ensp;Design de sobrancelha&ensp;</td>
-                <td>&ensp;Luiz&ensp;</td>
-                <td>&ensp;Lorem ipsum dolor.&ensp;</td>
-                <td><div class="controles">
-                  <span class="editar"><a href="#"></a></span>
-                  <span class="mais-opcoes"><a href="#"></a></span>
-                </div></td>
-              </tr>
-              <tr>
-                <td>&ensp;11:30&ensp;&ensp;</td>
-                <td>&ensp;Corte e tingimento de cabelo&ensp;</td>
-                <td>&ensp;Alvaro&ensp;</td>
-                <td>&ensp;Lorem ipsum dolor.&ensp;</td>
-                <td><div class="controles">
-                  <span class="editar"><a href="#"></a></span>
-                  <span class="mais-opcoes"><a href="#"></a></span>
-                </div></td>
-              </tr>
-              <tr>
-                <td>&ensp;13:40&ensp;&ensp;</td>
-                <td>&ensp;Barba&ensp;</td>
-                <td>&ensp;Gustavo&ensp;</td>
-                <td>&ensp;Lorem ipsum dolor.&ensp;</td>
-                <td><div class="controles">
-                  <span class="editar"><a href="#"></a></span>
-                  <span class="mais-opcoes"><a href="#"></a></span>
-                </div></td>
-              </tr>
-              <tr>
-                <td>&ensp;14:00&ensp;&ensp;</td>
-                <td>&ensp;Design de sobrancelha&ensp;</td>
-                <td>&ensp;Felipe&ensp;</td>
-                <td>&ensp;Lorem ipsum dolor.&ensp;</td>
-                <td><div class="controles">
-                  <span class="editar"><a href="#"></a></span>
-                  <span class="mais-opcoes"><a href="#"></a></span>
-                </div></td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </section>
+    </div>
   </div>
-  </section>
-  </div>
-</main>
 </div>
+</main>
 
 <footer>
     <div class="container">

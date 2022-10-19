@@ -8,12 +8,18 @@ body{
     background-color: #fff;
 }
 
+h2{
+    font-size: 50px;
+    color: #004A8D;
+}
+
 /*cabeçalho*/
 header {
     width: 100%;
     height: 44px;
-    padding: 10px 0;
+    padding: 16px 0;
     background-color: #004A8D;
+    position:top;
 }
 header .container {
     display: flex;
@@ -22,7 +28,7 @@ header .container {
     align-items: center;
 }
 header .logo{
-    width: 65px;
+    width: 72px;
     margin-left: 50px;
     display: flex;
     flex-direction: row;
@@ -38,30 +44,26 @@ header h6 {
 h6:hover{
     color: #F7941D;
 }
-
 header ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     gap: 16px;
     margin-right: 20px;
+    align-items: center;
 }
-
 header ul li {
     font-weight: 500;
     line-height: 30px;
 }
-
 header li a {
     text-decoration: none;
     color: #FFF;
     padding-bottom: 16px;
 }
-
 header li a:hover {
     color: #F7941D;
 }
-
 header li a.active {
     font-weight: 700;
     border-bottom:2px solid #F7941D;
@@ -69,26 +71,94 @@ header li a.active {
     bottom: 5px;
     color: #F7941D;
 }
+header button {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: #f7941d;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    font-size:16px;
+}
+header button a{
+    text-decoration: none;
+}
 /*fim cabeçalho*/
 
 /*tela index*/
+
+/*welcome page*/
+#welcome-page{
+    max-width: 1400px;
+    margin: 0 auto; 
+}
+#welcome-page .welcome-content .welcome-banner{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+#welcome-page .welcome-content .img-desenho{
+    position:end;
+    width:800px;
+}
+#welcome-page .welcome-content .logo-senac{
+    width:70px;
+}
+#welcome-page .welcome-texts p{
+text-decoration: italic;
+font-size: 25px;
+flex-wrap: wrap;
+margin-top: 20px;
+color: grey;
+}
+#welcome-page .welcome-banner .botao-login{
+    width: 250px;
+    max-height: 90px;
+    border-radius: 5px;
+    border: none;
+    background: #f7941d;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    font-size:25px;
+}
+#welcome-page .welcome-banner .botao-servicos{
+    border: 2px solid #004A8D;
+    color: #004A8D;
+    font-size: 25px;
+    max-width:270px;
+    max-height: 90px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    font-weight: 600;
+    text-align: center;
+}
+#welcome-page .botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 350px;
+    align-items: bottom;
+}
+/*fim welcome page*/
+
+
 #servicos {
     max-width: 1400px;
     margin: 0 auto; 
 }
-
-.banner-background{
-    background-image: url('../img/banner3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width:100%;
-    height:760px;
-    background-position:100%;
-    
-}
 /*CARDS*/
 #servicos .servicos-content h2{
-    margin-top: 20px;
+    text-decoration: none;
+    color:#004A8D;
     font-size: 65px;
     text-align: center;
     margin-bottom: 20px;
@@ -99,7 +169,6 @@ header li a.active {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-
 }
 #servicos .servicos-card{
     display: flex;
@@ -138,7 +207,6 @@ header li a.active {
     font-style: italic;
     margin-top:10px;
 }
-
 #servicos .servico-preco-btn{
     display: flex;
     flex-direction: row;
@@ -155,33 +223,29 @@ header li a.active {
     max-height: 40px;
     border:none;
 }
-
 #servicos .servico-preco-btn a{
     text-decoration: none;
     color: #FFF;
 }
 
-
+/*banner agendamentos*/
 #agendamento .imagem-agendamentos{
 display: flex;
 justify-content: center;
 position: relative;
 }
-
 #agendamento .imagem-agendamentos img{
     margin-top: 20px;
     object-fit:contain;
     max-width:1220px;
     border-radius: 20px;
 }
-
 #agendamento .agendamento-content{
     display: flex;
     flex-direction: row;
     justify-content: right;
     margin-right: 365px;
 }
-
 #agendamento .agendamento-content h2{
     position: absolute;
     margin-top:-750px;
@@ -190,7 +254,6 @@ position: relative;
     font-size: 50px;
 
 }
-
 #agendamento .agendamento-content button {
     display: flex;
     justify-content:flex-end;
@@ -208,37 +271,50 @@ position: relative;
     font-size: 1.5em;
     font-weight: 700;
 }
+/*fim banner agendamentos*/
 /*fim tela index*/
 
+
 /*TELA DE AGENDAMENTOS*/
-.display-arrumado{
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+/*divisao do card*/
+.esquerda{
+    display: flex;
+    width:400px;
+    background-color: #000;
+    height:1000px;
+    position:left;
 }
 
-aside{
-    background-color:rgba(160, 160, 160, 0.4) ;
-    width: 425px;
-    white-space: normal;
-    height: 600px;
-    line-height: 100%;
-}
-.container-ag {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#agendamentos{
-    max-width: 1000px;
-    margin: 0 auto;
+/*card da divisao esquerda*/
+.esquerda .agendamento-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto auto auto 50px;
+
 }  
-#agendamentos .atendentes h2 {
+.esquerda .card-agendado{
+    width:15em;
+    height:150px;
+    background-color: grey;
+    padding: 20px;
+}
+
+/*divisao 2*/
+.direita{
+padding: 10px;
+margin-left: 120px;
+position: right;
+margin-top: 20px;
+}
+
+/*atendentes*/ 
+#agendamentos .agendamento-users h2 {
     padding-left: 15px;
 }
-#agendamentos .agendamentos-content .atendentes-lista {
+#agendamentos .agendamento-users .atendentes-lista {
     display: flex;
     flex-direction: row;
     gap: 26px;
@@ -252,11 +328,9 @@ aside{
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   }
-  
   #agendamentos .atendente-card img {
     border-radius: 50px;
-  }
-  
+}
   #agendamentos .atendente-card p {
     font-weight: 500;
     line-height: 60px;
@@ -266,8 +340,13 @@ aside{
      box-shadow:  rgba (182, 127, 80, 0.4) 0px 0px 0px 6px;
   }
 
-/*inicio tabela*/
+/*fim atendentes*/
 
+/*dia*/
+
+/*fim dos card #dia*/
+
+/*inicio tabela*/
 table{
     display: flex;
     justify-content: center;
@@ -277,22 +356,9 @@ table{
     border-collapse: collapse;
     border:3px solid #B57F50;
 }
-thead th:nth-child(1) {
-    width: 30%;
-
+thead{
 
 }
-thead th:nth-child(2) {
-    width: 20%;
-}
-
-thead th:nth-child(3) {
-    width: 15%;
-}
-
-thead th:nth-child(4) {
-    width: 35%;
-} 
 #dia .dia-tabela tr:first-child{
    align-items: center;
    height: 50px;
@@ -308,6 +374,7 @@ thead th:nth-child(4) {
    font-size: 16px;
 }
 /*fim Tabela*/
+/*fim div 2*/
 /*Fim tela de agendamentos*/
 
 
@@ -329,7 +396,6 @@ thead th:nth-child(4) {
     justify-content: space-evenly;
     align-items: center;
 }
-
 #sobre_nos .sobre_nos-card-content .sobre_nos-card {
 border: #0B2545;
 border-radius: 12px;
@@ -339,49 +405,39 @@ height: 350px;
 margin-top: 100px;
 padding: 20px;
 }
-
 #sobre_nos img {
     max-width: 300px;
     max-height: 350px;
     justify-content: center;
 }    
-
 #sobre_nos .sobre_nos-info {
     text-align: center;
 }
-
 #sobre_nos .sobre_nos-info h3 {
     padding-top: 10px;
     padding-bottom: 8px;
 }
-
 #sobre_nos .sobre_nos-info p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 #texto_final {
     margin-left: 48px;
 }
-
 #texto_final h2{
     font-size: 30px;
     margin-top: 65px;
 }
 
 /* Fim sobre nos */
-
-
-
-
 footer {
     background-color: #004A8D;
     color: #FFF;
-    margin-top: 52px;
     padding: 32px 0;
     justify-content: center;
     bottom: 0;
     width: 100%;
+    position:bottom;
     
 
 }
