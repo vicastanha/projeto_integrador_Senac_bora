@@ -3,11 +3,9 @@
     margin:0;
     font-family: 'Raleway', sans-serif;
 }
-
 body{
     background-color: #fff;
 }
-
 /*cabeçalho*/
 header {
     width: 100%;
@@ -84,34 +82,43 @@ header button a{
 }
 .img-perfil{
     background-image: url('/front-end/img/escova1.png');
+    border-radius:50px;
+    width: 30px;
 }
 /*fim cabeçalho*/
-
 /*tela index*/
-
 /*welcome page*/
 #welcome-page{
     max-width: 1480px;
     margin: 0 auto; 
 }
+#welcome-page .welcome-content{
+margin-top: 50px;
+margin-bottom: 45px;
+}
 #welcome-page .welcome-content .welcome-banner{
-    padding: 20px;
     display: flex;
 }
 #welcome-page .welcome-content .img-desenho{
-    padding-top: 20px;
-    position:end;
-    width:800px;
+    width:780px;
     align-items: center;
 }
 #welcome-page .welcome-content .logo-senac{
     width:70px;
 }
+#welcome-page .welcome-texts h2{
+    text-decoration: none;
+    color:#000;
+    font-size: 60px;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
 #welcome-page .welcome-texts p{
 text-decoration: italic;
 font-size: 25px;
 flex-wrap: wrap;
-margin-top: 20px;
+margin-top: 15px;
 color: grey;
 text-align: justify;
 }
@@ -147,14 +154,10 @@ text-align: justify;
 #welcome-page .botoes{
     display: flex;
     flex-direction: row;
-    gap: 24px;
-    margin-top: 130px;
-    align-items: bottom;
+    gap: 16px;
+    margin-top: 110px;
 }
-
 /*fim welcome page*/
-
-
 #servicos {
     max-width: 1480px;
     margin: 0 auto; 
@@ -165,7 +168,8 @@ text-align: justify;
     color:#000;
     font-size: 65px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 #servicos .servicos-card-content{
     display: flex;
@@ -173,6 +177,7 @@ text-align: justify;
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 #servicos .servicos-card{
     display: flex;
@@ -186,11 +191,16 @@ text-align: justify;
 #servicos .servicos-card:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-#servicos img{
+#servicos .servicos-card .servico-img{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+#servicos .servicos-card .servico-img img{
+    display: flex;
     max-width: 250px;
     max-height: 200px;
     border-radius: 7px 7px 0 0;
-    align-items: center;
     
 }
 #servicos .servico-info{
@@ -221,7 +231,7 @@ text-align: justify;
     align-items: center;
     margin-bottom: 20px;
 }
-#servicos .servico-preco-btn button{
+#servicos .servico-preco-btn span{
     padding: 10px;
     border-radius: 5px;
     background-color: #F7941D;
@@ -234,54 +244,14 @@ text-align: justify;
     text-decoration: none;
     color: #FFF;
 }
-
-/*banner agendamentos*/
-#agendamento .agendamento-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 100px;
-    margin-top: 100px ;
-    padding: 20px;
-}
-#agendamento .agendamento-content h2{
-     text-align: center;
-    color: #000;
-    font-size: 60px;
-}
-#agendamento .agendamento-content span{
-    border-bottom:5px solid #F7941D;
-    width: 1050px;
-    margin-top: 10px;
-    margin-bottom: 10px;    
-}
-#agendamento .agendamento-content button {
-    padding: 16px;
-    border: none;
-    background-color: #004A8D;
-    border-radius: 5px;
-    width: 250px;
-}
-#agendamento .agendamento-content a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.5em;
-    font-weight: 600;
-}
-
-/*fim banner agendamentos*/
 /*fim tela index*/
 
-
 /*TELA DE AGENDAMENTOS*/
-
 /*divisao do card*/
 .esquerda{
     display: flex;
     width:400px;
-    background-color: #000;
+    background-color:#000; 
     height:1000px;
     position:left;
 }
@@ -298,8 +268,10 @@ text-align: justify;
 .esquerda .card-agendado{
     width:15em;
     height:150px;
-    background-color: grey;
+    background-color: #D9DCD6;
     padding: 20px;
+    border-radius:5px ;
+    margin-bottom: 100px;
 }
 
 /*divisao 2*/
@@ -311,8 +283,11 @@ margin-top: 20px;
 }
 
 /*atendentes*/ 
-#agendamentos .agendamento-users h2 {
+#agendamentos h2 {
     padding-left: 15px;
+    color: #004A8D;
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 #agendamentos .agendamento-users .atendentes-lista {
     display: flex;
@@ -327,52 +302,39 @@ margin-top: 20px;
     text-align: center;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  }
-  #agendamentos .atendente-card img {
-    border-radius: 50px;
 }
-  #agendamentos .atendente-card p {
+#agendamentos .atendente-card img {
+    border-radius: 50px;
+    width: 35px;
+}
+#agendamentos .atendente-card p {
     font-weight: 500;
     line-height: 60px;
-  }
-  
-  #agendamentos .atendente-card:hover {
+} 
+#agendamentos .atendente-card:hover {
      box-shadow:  rgba (182, 127, 80, 0.4) 0px 0px 0px 6px;
-  }
-
+}
 /*fim atendentes*/
 
-/*dia*/
+/*Tabela de seleção dia*/
 
 /*fim dos card #dia*/
 
-/*inicio tabela*/
-table{
+/*inicio tabela horario*/
+.horarios{
     display: flex;
-    justify-content: center;
     align-items: center;
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border:3px solid #B57F50;
+    text-align: center;
+    width: 1050px;
+    border:3px solid #EAF6FF;
 }
-thead{
+.cabecalho th{
+    background-color:#FDC180 ;
+    padding: 20px;
+    width: 210px;
+    border-radius: 5px;
+}
 
-}
-#dia .dia-tabela tr:first-child{
-   align-items: center;
-   height: 50px;
-   gap: 16px;
-   text-align: center;
-   
-}
-#dia .dia-tabela tr{
-    align-items: center;
-   height: 30px;
-   gap: 16px;
-   text-align: center;
-   font-size: 16px;
-}
 /*fim Tabela*/
 /*fim div 2*/
 /*Fim tela de agendamentos*/
@@ -428,8 +390,8 @@ padding: 20px;
     font-size: 30px;
     margin-top: 65px;
 }
-
 /* Fim sobre nos */
+
 footer {
     background-color: #004A8D;
     color: #FFF;
@@ -441,28 +403,23 @@ footer {
     
 
 }
-
 .footer-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 .footer-icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 5px;
 }
-
 .footer-icons img {
     max-width: 32px;
 }
-
 footer .footer-info {
     justify-items: center;
 }
-
 footer .footer-info ul {
     display: flex;
     flex-direction: row;
@@ -473,11 +430,9 @@ footer .footer-info ul {
     justify-content: center;
     padding: 25px;
 }
-
 footer li:first-child {
     list-style-type: none;
 }
-
 .footer-copyright {
     text-align: center;
     font-weight: 300;
