@@ -248,44 +248,40 @@ text-align: justify;
 
 /*TELA DE AGENDAMENTOS*/
 /*divisao do card*/
-.esquerda{
+.esquerda {
     display: flex;
-    width:400px;
-    background-color:#000; 
-    height:1000px;
-    position:left;
+    width: 400px;
+    background-color: #000;
+    height: 1000px;
+    position: left;
 }
-
 /*card da divisao esquerda*/
-.esquerda .agendamento-card{
+.esquerda .agendamento-card {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: auto auto auto 50px;
-
-}  
-.esquerda .card-agendado{
-    width:15em;
-    height:150px;
-    background-color: #D9DCD6;
+}
+.esquerda .card-agendado {
+    width: 15em;
+    height: 150px;
+    background-color: #d9dcd6;
     padding: 20px;
-    border-radius:5px ;
+    border-radius: 5px;
     margin-bottom: 100px;
 }
-
 /*divisao 2*/
-.direita{
-padding: 10px;
-margin-left: 120px;
-position: right;
-margin-top: 20px;
+.direita {
+    padding: 10px;
+    margin-left: 120px;
+    position: right;
+    margin-top: 20px;
 }
-
-/*atendentes*/ 
+/*atendentes*/
 #agendamentos h2 {
     padding-left: 15px;
-    color: #004A8D;
+    color: #004a8d;
     margin-bottom: 30px;
     font-size: 20px;
 }
@@ -310,31 +306,89 @@ margin-top: 20px;
 #agendamentos .atendente-card p {
     font-weight: 500;
     line-height: 60px;
-} 
+}
 #agendamentos .atendente-card:hover {
-     box-shadow:  rgba (182, 127, 80, 0.4) 0px 0px 0px 6px;
+    box-shadow: rgba (182, 127, 80, 0.4) 0px 0px 0px 6px;
 }
 /*fim atendentes*/
 
-/*Tabela de seleção dia*/
-
-/*fim dos card #dia*/
+/*Filtro*/
+.tabela-dia h2 {
+    padding-left: 15px;
+    color: #004a8d;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.tabela-dia-content {
+    width: 600px;
+    height: 100px;
+    background-color: #d3d3da;
+    border-radius: 7px;
+}
+.escolha-dia {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.tabela-dia .dia-card {
+    color: #000;
+}
+.tabela-dia .dia-card p {
+    font-size: 26px;
+    align-items: center;
+}
+.tabela-dia .dia-card h3 {
+    font-size: 20px;
+    align-items: center;
+}
+.dia-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.selected {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.tabela-dia .seta-esquerda {
+    background-image: ulr("");
+}
+.tabela-dia .seta-direita {
+    background-image: url('/front-end/img/');
+}
+/*fim Filtro*/
 
 /*inicio tabela horario*/
-.horarios{
+.tabela-horarios{
+    justify-content: center;
+}
+.horarios {
     display: flex;
     align-items: center;
     text-align: center;
     width: 1050px;
-    border:3px solid #EAF6FF;
+    border: 3px solid #eaf6ff;
+    border-radius: 5px;
+    
 }
-.cabecalho th{
-    background-color:#FDC180 ;
+.cabecalho th {
+    background-color: #fdc180;
     padding: 20px;
     width: 210px;
     border-radius: 5px;
 }
-
+.linha-completa td {
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
 /*fim Tabela*/
 /*fim div 2*/
 /*Fim tela de agendamentos*/
@@ -399,7 +453,7 @@ footer {
     justify-content: center;
     bottom: 0;
     width: 100%;
-    position:bottom;
+  
     
 
 }
@@ -417,9 +471,7 @@ footer {
 .footer-icons img {
     max-width: 32px;
 }
-footer .footer-info {
-    justify-items: center;
-}
+
 footer .footer-info ul {
     display: flex;
     flex-direction: row;
