@@ -57,6 +57,9 @@ header li a {
 header li a:hover {
     color: #F7941D;
 }
+header li a button:hover {
+    color: #004A8D;
+}
 header li a.active {
     font-weight: 700;
     border-bottom:2px solid #F7941D;
@@ -358,10 +361,10 @@ text-align: justify;
     text-align: center;
 }
 .tabela-dia .seta-esquerda {
-    background-image: ulr("");
+    background-image: url("");
 }
 .tabela-dia .seta-direita {
-    background-image: url('/front-end/img/');
+    background-image: url('/front-end/img');
 }
 /*fim Filtro*/
 
@@ -393,6 +396,106 @@ text-align: justify;
 /*fim div 2*/
 /*Fim tela de agendamentos*/
 
+/* Inicio cadastro */
+.cadastro {
+    /* CADASTRE SEU USUÁRIO */
+    margin-top: 68px;
+    font-size: 45px;
+    text-align: center;
+}
+.CL_PF {
+    /* CLIENTE E PROFOSSIONAL */
+    width: 100vw;
+    height: 10vh;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15px; /*pra subi*/ 
+}
+.inputs {
+    /* cliente e profissional */
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 18px;
+    border: 2px solid #f7951d8e;
+    border-radius: 7px;
+    background-color: #f7951d28;
+    /*COR DO FUNDO "QUADRADINHO"*/
+    font-weight: 420;
+    color: #004A8D;
+    /*COR DA LETRA*/
+}
+.inputS {
+    /* MEXER NOS NOMES DOS DADOS */
+    width: 100vw;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+.inp1 input {
+    /* BOTAO CLIENTE E PROFISSIONAL */
+    width: 16px;
+    height: auto;
+}
+.nmp {
+    /* DADOS */
+    font-size: 14px;
+    color: #004A8D;
+    font-style: italic;
+    font-weight: 550;
+    flex-direction: row;
+}
+.campos {
+    /* CAIXINHAS DOS DADOS */
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    /*DAR ESPAÇAMENTO DENTRO DA CAIXINHA*/
+    width: 500px;
+    border-radius: 7px;
+    background-color: #dcdcdc3a;
+    font-style: italic;
+    font-size: 16px;
+}
+.btn {
+    /* CADASTRAR-SE */
+    padding: 13px;
+    /*DAR ESPAÇAMENTO DENTRO DA CAIXINHA*/
+    border-radius: 7px;
+    border: 2px solid #f7951d8e;
+    background-color: #f7951d28;
+    font-weight: 420;
+    color: #004A8D;
+    justify-content: center;
+}
+/* Fim cadastro */
+/* botões*/
+.bt_cad {
+    width: 100vw;
+    height: 10vh;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bt_log {
+    margin-top: -16px;
+    padding-bottom: 16px;
+    width: 100vw;
+    height: 10vh;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* fim botao cadastra-se */
 
 /* Inicio sobre nos */
 #titulo {

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <header>
+            <div class="container">
+                <img src="./img/icon-logo.svg" alt="" class="logo">
+                <nav class="menu-content">
+                    <ul>
+                        <li><a href="./paginaInicial.html">Home</a></li>
+                        <li><a href="./agendamentos.html">Agendamentos</a></li>
+                        <li><a href="./sobrenos.html">Sobre nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<!-- Fim Cabeçalho -->
+
+<!-- Inicio (cadastro) -->
+
+    <h1 class="cadastro">Cadastre seu usuário</h1>
+
+    <div class="CL_PF"> <!--CLIENTE E PROFISSIONAL-->
+        <div class="inputs">
+            <input type="radio" name="fav_language" value="Cliente">
+            <label for="html">Cliente</label><br>
+        
+            <input type="radio" name="fav_language" value="Profissional">
+            <label for="css">Profissional</label><br>
+        </div>
+    </div>
+
+
+    <form action="/add-usuario" method="post">
+
+    <div class="inputS">
+        <label class="nmp">Nome
+        <input type="text" name="nome" class="campos" placeholder="Ex: João Pedro"></label>
+    </div>
+
+    <div class="inputS">
+       <label class="nmp">Telefone
+       <input type="text" name="telefone" class="campos" placeholder="Ex: (00) 12345-6789"></label>
+    </div>
+
+    <div class="inputS">
+        <label class="nmp">Email
+        <input type="email" name="email" class="campos" placeholder="Ex: joãopedro@gmail.com"></label>
+    </div>
+
+    <div class="inputS">
+        <label class="nmp">Senha
+        <input type="password"name="password" class="campos" placeholder="Ex: ********"></label>
+    </div> 
+
+    <div class="bt_cad">
+        <input class="btn" type="submit" name="acao" value="Cadastrar-se">
+    </div>
+      
+    </form>
+
+      <!-- Inicio rodapé  -->
+      <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-icons">
+                    <img src="./img/icon-facebook.svg" alt="facebook icone">
+                    <img src="./img/icon-instagram.svg" alt="instagram icone">
+                    <img src="./img/icon-whatsapp.svg" alt="whatsapp icone">
+                </div>
+                <div class="footer-info">
+                    <ul>
+                        <li>Info</li>
+                        <li>Suporte</li>
+                        <li>Marketing</li>
+                    </ul>
+                </div>
+                <p class="footer-copyright">
+                    &#169; 2022 - Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+        </div>
+    </footer>    
+
+  </body>
+</html>
