@@ -3,6 +3,8 @@
     margin:0;
     font-family: 'Raleway', sans-serif;
 }
+
+
 body{
     background-color: #fff;
 }
@@ -250,13 +252,24 @@ text-align: justify;
 /*fim tela index*/
 
 /*TELA DE AGENDAMENTOS*/
-/*divisao do card*/
+#agendamentos .agendamento-content {
+    display: flex;
+    flex-direction: row;
+}
+/*divisao do card esquerda*/
+.btn-openandclose{
+    display:flex;
+    justify-content: end;
+    position: absolute;
+    
+}
 .esquerda {
     display: flex;
     width: 400px;
     background-color: #000;
-    height: 1000px;
+    height: 900px;
     position: left;
+    position: relative;
 }
 /*card da divisao esquerda*/
 .esquerda .agendamento-card {
@@ -272,8 +285,7 @@ text-align: justify;
     background-color: #d9dcd6;
     padding: 20px;
     border-radius: 5px;
-    margin-bottom: 100px;
-}
+    margin-bottom: 100px;}
 /*divisao 2*/
 .direita {
     padding: 10px;
@@ -334,7 +346,8 @@ text-align: justify;
     gap: 30px;
     align-items: center;
     justify-content: center;
-}
+    padding: 10px;} 
+/*MODIFICAÇÃO*/
 .tabela-dia .dia-card {
     color: #000;
 }
@@ -350,6 +363,7 @@ text-align: justify;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 .selected {
     width: 80px;
@@ -359,27 +373,25 @@ text-align: justify;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    border-radius: 5px;
+    display: flex;
 }
 .tabela-dia .seta-esquerda {
-    background-image: url("");
+    background-image: url("/front-end/img/seta-esquerda.svg");
+    width: 25px;
+    height: auto;
+
 }
 .tabela-dia .seta-direita {
-    background-image: url('/front-end/img');
 }
 /*fim Filtro*/
 
 /*inicio tabela horario*/
-.tabela-horarios{
-    justify-content: center;
-}
 .horarios {
     display: flex;
     align-items: center;
     text-align: center;
     width: 1050px;
-    border: 3px solid #eaf6ff;
-    border-radius: 5px;
-    
 }
 .cabecalho th {
     background-color: #fdc180;
@@ -387,13 +399,13 @@ text-align: justify;
     width: 210px;
     border-radius: 5px;
 }
+
 .linha-completa td {
     padding: 20px;
+    background-color: #fff;
     border: 2px solid #000;
-    border-radius: 5px;
 }
-/*fim Tabela*/
-/*fim div 2*/
+/*fim Tabela Horários*/
 /*Fim tela de agendamentos*/
 
 /* Inicio cadastro */
