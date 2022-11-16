@@ -59,7 +59,7 @@ header li a {
 header li a:hover {
     color: #F7941D;
 }
-header li a button:hover {
+header li button a:hover {
     color: #004A8D;
 }
 header li a.active {
@@ -386,24 +386,15 @@ text-align: justify;
 }
 /*fim Filtro*/
 
-/*inicio tabela horario*/
-.horarios {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 1050px;
-}
-.cabecalho th {
-    background-color: #fdc180;
-    padding: 20px;
-    width: 210px;
-    border-radius: 5px;
-}
+/*inicio lista de horario*/
 
-.linha-completa td {
+
+
+.linha-completa {
     padding: 20px;
     background-color: #fff;
-    border: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
 }
 /*fim Tabela Horários*/
 /*Fim tela de agendamentos*/
