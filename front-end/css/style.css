@@ -1,7 +1,8 @@
 * {
     padding:0;
     margin:0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -11,10 +12,12 @@ body{
 /*cabeçalho*/
 header {
     width: 100%;
-    height: 44px;
-    padding: 16px 0;
-    background-color: #004A8D;
-    position:top;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.267);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    top: 0;
+
 }
 header .container {
     display: flex;
@@ -23,18 +26,16 @@ header .container {
     align-items: center;
 }
 header .logo{
-    width: 72px;
+    width: 90px;
     margin-left: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 16px;
 }
 header h6 {
     font-size: 24px;
-    color: #FFF;
+    color: #000;
     font-weight: 500;
-    line-height: 30px;
 }
 h6:hover{
     color: #F7941D;
@@ -49,18 +50,18 @@ header ul {
 }
 header ul li {
     font-weight: 500;
-    line-height: 30px;
+    padding: 5px;
 }
 header li a {
     text-decoration: none;
-    color: #FFF;
+    color: #000;
     padding-bottom: 16px;
 }
 header li a:hover {
     color: #F7941D;
 }
 header li button a:hover {
-    color: #004A8D;
+    color: #FFF;
 }
 header li a.active {
     font-weight: 700;
@@ -85,10 +86,24 @@ header button {
 header button a{
     text-decoration: none;
 }
-.img-perfil{
-    background-image: url('/front-end/img/escova1.png');
-    border-radius:50px;
-    width: 30px;
+.menu-content .perfil img{
+    border: 2px solid #F7941D;
+    width: 40px;
+    border-radius:100px;
+}
+
+.menu-content .perfil ul{
+    display: none;
+    
+}
+
+.perfil ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-left: -38px;
+
 }
 /*fim cabeçalho*/
 /*tela index*/
@@ -114,7 +129,7 @@ margin-bottom: 45px;
 #welcome-page .welcome-texts h2{
     text-decoration: none;
     color:#000;
-    font-size: 60px;
+    font-size: 55px;
     text-align: left;
     margin-bottom: 20px;
 
@@ -252,164 +267,7 @@ text-align: justify;
 /*fim tela index*/
 
 /*TELA DE AGENDAMENTOS*/
-#agendamentos .agendamento-content {
-    display: flex;
-    flex-direction: row;
-}
-/*divisao do card esquerda*/
-.btn-openandclose{
-    display:flex;
-    justify-content: end;
-    position: absolute;
-    
-}
-.esquerda {
-    display: flex;
-    width: 400px;
-    background-color: #000;
-    height: 900px;
-    position: left;
-    position: relative;
-}
-/*card da divisao esquerda*/
-.esquerda .agendamento-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto auto auto 50px;
-}
-.esquerda .card-agendado {
-    width: 15em;
-    height: 150px;
-    background-color: #d9dcd6;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 100px;}
-/*divisao 2*/
-.direita {
-    padding: 10px;
-    margin-left: 120px;
-    position: right;
-    margin-top: 20px;
-}
-/*atendentes*/
-#agendamentos h2 {
-    padding-left: 15px;
-    color: #004a8d;
-    margin-bottom: 30px;
-    font-size: 20px;
-}
-#agendamentos .agendamento-users .atendentes-lista {
-    display: flex;
-    flex-direction: row;
-    gap: 26px;
-    margin-left: 20px;
-}
-#agendamentos .atendentes-lista .atendente-card {
-    width: 80px;
-    height: 100px;
-    margin-bottom: 20px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-}
-#agendamentos .atendente-card img {
-    border-radius: 50px;
-    width: 35px;
-}
-#agendamentos .atendente-card p {
-    font-weight: 500;
-    line-height: 60px;
-}
-#agendamentos .atendente-card:hover {
-    box-shadow: rgba (182, 127, 80, 0.4) 0px 0px 0px 6px;
-}
-/*fim atendentes*/
 
-/*Filtro*/
-.tabela-dia h2 {
-    padding-left: 15px;
-    color: #004a8d;
-    margin-bottom: 30px;
-    font-size: 20px;
-}
-.tabela-dia-content {
-    width: 600px;
-    height: 100px;
-    background-color: #d3d3da;
-    border-radius: 7px;
-}
-.escolha-dia {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;} 
-/*MODIFICAÇÃO*/
-.tabela-dia .dia-card {
-    color: #000;
-}
-.tabela-dia .dia-card p {
-    font-size: 26px;
-    align-items: center;
-}
-.tabela-dia .dia-card h3 {
-    font-size: 20px;
-    align-items: center;
-}
-.dia-card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-.selected {
-    width: 80px;
-    height: 80px;
-    background-color: #fff;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border-radius: 5px;
-    display: flex;
-}
-.tabela-dia .seta-esquerda {
-    background-image: url("/front-end/img/seta-esquerda.svg");
-    width: 25px;
-    height: auto;
-
-}
-.tabela-dia .seta-direita {
-}
-/*fim Filtro*/
-
-/*inicio lista de horario*/
-.lista-horario{
-    display: flex;
-    flex-direction: row;
-}
-
-.linha-completa-sem-agendamento {
-    padding: 20px;
-    background-color: #fff;
-    border-bottom: 2px solid #000;
-    padding-bottom: 10px;
-    width: 360px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-.linha-completa-sem-agendamento .linha{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-}
-/*fim Tabela Horários*/
 /*Fim tela de agendamentos*/
 
 /* Inicio cadastro */
@@ -572,9 +430,6 @@ footer {
     justify-content: center;
     bottom: 0;
     width: 100%;
-  
-    
-
 }
 .footer-content {
     display: flex;
